@@ -26,7 +26,7 @@ import barraTitulo from '../componentes/barraTitulo.vue';
 import cardCurso from '../componentes/cardCurso.vue';
 import tmFooter from '@/componentes/tmFooter.vue';
 
-import dados from '@/assets/cursos/dados.json';
+import dados from '../../../assets/cursos/dados.json';
 let cursos = dados.cursos;
 console.log(cursos);
 </script>
