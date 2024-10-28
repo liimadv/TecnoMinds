@@ -5,14 +5,13 @@
         <div class="area">
             <barraTitulo :texto="'Nossos Cursos'" />
             <div class="blocoCards">
-                <cardCurso v-for="c in cursos" :idCurso="c.id" :capa_curso="c.capa" :curso="true" :titulo="c.titulo" :criador="c.autor" :nModulos="c.totalModulos"  :avaliacao="c.avaliacao.toString()"/>
+                <cardCurso v-for="c in cursos" :idCurso="Number(c.id)" :capa_curso="c.capa" :curso="true" :titulo="c.titulo" :criador="c.autor" :nModulos="c.totalModulos"  :avaliacao="c.avaliacao.toString()"/>
             </div>
         </div>
         
         <div class="area">
             <barraTitulo :texto="'Notícias Sobre Tecnologia'" />
             <div class="blocoCards">
-                <cardCurso :curso="false" :titulo="'Uma Noticia'" :criador="'Google'" :data_post="'25/10/1921'" :link_noticia="'https://google.com'"/>
             </div>
         </div>
     </main>
