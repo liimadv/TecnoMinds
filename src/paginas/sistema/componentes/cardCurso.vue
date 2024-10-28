@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
     curso: Boolean, // verificar se é curso, se false, entao é noticia
     titulo: String, //prop padrao
     criador: String, //prop padrao (representa nome do site tambem)
@@ -31,6 +31,8 @@ defineProps({
     idCurso: Number, // apenas p curso
     nModulos: Number // apenas p curso
 });
+
+console.log(props);
 </script>
 
 <style lang="scss">
